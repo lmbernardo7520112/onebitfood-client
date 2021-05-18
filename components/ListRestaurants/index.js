@@ -4,6 +4,7 @@ import Restaurant from '../ListRestaurants/Restaurant';
 import getRestaurants from '../../services/getRestaurants'
 
 export default function ListRestaurants() {
+  
    const { restaurants, isLoading, isError } = getRestaurants();
 
    if(!restaurants)
@@ -13,6 +14,7 @@ export default function ListRestaurants() {
    <div className='mt-5'>
      <h3 className='fw-bold'>Restaurantes</h3>
      <Row>
+      console.log(restaurants)
       {restaurants.map((restaurant, i) => <Restaurant {...restaurant} key={i}/>)}
      </Row>
    </div>
