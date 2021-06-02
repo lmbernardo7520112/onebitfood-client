@@ -24,7 +24,6 @@ export default function ListRestaurants() {
    <div className='mt-5'>
      <h3 className='fw-bold'>Restaurantes</h3>
      <Row>
-      {console.log(restaurants)}
          {renderContent()}
      </Row>
    </div>
