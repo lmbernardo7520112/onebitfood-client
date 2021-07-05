@@ -13,12 +13,12 @@ function MyApp({ Component, pageProps }) {
       </Head>
     
       <main>
+      <RecoilRoot>
         <Header />
         <Container className='mt-5'>
-        <RecoilRoot>
           <Component {...pageProps} />
-        </RecoilRoot>
         </Container>
+      </RecoilRoot>
       </main>
     </>
   )
